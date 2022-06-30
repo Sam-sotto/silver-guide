@@ -1,0 +1,62 @@
+.study-text{
+    font-size: 20px;
+    top: 10px;
+}
+
+.study-container{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80%;
+    width: 90%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 15px;
+    user-select: none;
+}
+
+.study-container .study{
+    position: relative;
+    height: 400px;
+    min-width: 35%;
+    background: rgb(9, 6, 31); 
+    border-radius: 20px;
+    margin: 0 20px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.study-container .study .content{
+    height: 85%;
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-size: contain;
+    background-position: center;
+}
+
+.study-container .study h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.study-container .study .content.UAI {
+    background: url('../props/UAI-1.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.study-container .study .content.Edu-IT {
+    background-image: url('../props/logo-it.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.study-container .study .content.English{
+    background-image: url('../props/british-logo.png');
+    background-position: center;
+    background-size: contain;
+}

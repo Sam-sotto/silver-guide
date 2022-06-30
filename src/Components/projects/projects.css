@@ -1,0 +1,128 @@
+.projects-txt{
+    font-size: 20px;
+    top: 10px;
+    font-weight: 100;
+}
+
+.projects-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+.projects-container .project {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.14);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.projects-container .project:hover{
+    background: rgba(255, 255, 255, 0.096);
+    transform: scale(1.01) ;
+    transition: 0.5s ease;
+}
+
+.projects-container  #movie:hover, #travel:hover, #bitz:hover, #xypo:hover, #old:hover{
+    transform: scale(0.95) ;
+    transition: 1.05s ease-in-out;
+  
+    background-position: center;
+
+}
+
+
+
+.projects-container .project .project-img.movie {
+    height: 300px;
+    width: 400px;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light)
+}
+
+.projects-container .project .project-img {
+    height: 300px;
+    width: 400px;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light)
+}
+
+.projects-container .project #movie{
+    background-image: url('../props/export/show-page.png'); 
+}
+
+.projects-container .project #travel{
+    background-image: url('../props/export/travel-page.png'); 
+}
+
+.projects-container .project #bitz{
+    background-image: url('../props/export/bitz-page.png'); 
+}
+
+.projects-container .project #xypo{
+    background-image: url('../props/export/xypo-page.png'); 
+}
+
+.projects-container .project #old{
+    background-image: url('../props/export/portfolio-page.png'); 
+}
+
+
+
+
+.projects-container .project .project-info{
+    margin-left: 50px; 
+    font-family: 'Open Sans Condensed';
+    max-width: 50%;
+}
+
+.projects-container .project .project-info .name{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.projects-container .project .project-info .tecnology{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.projects-container .project .project-info .about{
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 40px;
+}
+
+.projects-container .project .project-info .repo-git{
+    background-color: var(--color-sec-light);
+    padding: 17px 35px;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 50px;
+    position: absolute;
+    transition: .1s ease;
+}
+
+.projects-container .project .project-info span{
+    text-transform: capitalize;
+}
+
+.projects-container .project .project-info .repo-git:hover{
+    background: transparent;
+    border: 2px solid var(--color-sec-light);
+}
